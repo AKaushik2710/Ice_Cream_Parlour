@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255, 157, 217, 0.9);
+}
+  
+.body{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, #fff7ad, #ffa9f9);
+}
+                                            /* Permission Window */
+#permission{
+    width: 30dvw;
+    height: 50dvh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 24dvh 5dvw;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom right, cyan, rgba(255, 65, 223, 0.9));
+    border: 1px solid rgba(0,0,0,0);
+    box-shadow: 2px 2px 10px rgba(221, 255, 157, 0.9);
+}
+.cont > p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px 10px rgba(255, 248, 157, 0.9);
+}
+.border_none{
+    border: 1px solid rgba(0,0,0,0);
+    color: rgba(157, 255, 242, 0.9);
+}
+.btn >button{
+    padding: 5px;
+    font-size: 1rem;
+    width: 5dvw;
+    height: 5dvh;
+    margin: 10px;
+    border-radius: 50px;
+    background-color: inherit;
+    color: white;
+    box-shadow: 3px 3px 12px rgba(157, 255, 189, 0.9);
+}
+                                            /* Fruits */
+.mash{
+    width: 40dvw;
+    height: 50dvh;
+    display: flex;
+    flex-direction: column;
+}
+.masher>p{
+    font-size: 3rem;
+}
+.choice_holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30dvw;
+    height: 30dvw;
+}
+
+@keyframes choice_maker{
+    0%{ transform: rotateZ(0deg);transform: rotateY(0deg);}
+    25%{ transform: rotateZ(90deg);transform: rotateX(90deg);}
+    50%{ transform: rotateZ(180deg);transform: rotateY(180deg);}
+    76%{ transform: rotateZ(270deg);transform: rotateX(270deg);}
+    100%{ transform: rotateZ(360deg); transform: rotateY(360deg);}
+}
+
+#choice{
+    animation-name: choice_maker;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#choice > img{
+    width: 20dvw;
+    height: 25dvh;
+}
+                                            /* Ice Cubes */
+#ice_cube{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#middle_one{
+    position: absolute;
+    top: -50px;
+    left: 47px;
+}
+
+#ice_cube > i{
+    color: azure;
+}
+
+@keyframes ice{
+    0%{transform:rotateZ(0deg); transform: rotateY(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotateZ(180deg); transform: rotateY(180deg);}
+    75%{transform: rotateZ(270deg);}
+    100%{transform: rotateZ(360deg); transform: rotateY(360deg);}
+}
+i.fa-dice-d6{
+    color: black;
+    animation-name: ice;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+                                            /* Processes */
+.img{
+    width: 20dvw;
+    height: 25dvh;
+}
+.img > img{
+    width: 20dvw;
+    height: 25dvh;
+    object-fit: contain;
+}
+.process{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.items ol{
+    display: flex;
+    font-weight: 700;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.items ol > li{
+    padding: 1rem;
+}
+.items ol > li:hover{
+    border: 0px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px cyan;
+}
+.items ol >li>p{
+    margin-top: 1rem;
+}
+
+.items ol >li>p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.process{
+    display: none;
+}
+                                            /* Holders */
+.holder > .items > ol > li{
+    width: 20dvw;
+}
+
+.holder > .items > ol > li > p{
+    margin-left: 1.2rem;
+}
+.holder > p,
+.holder > .items > ol >li > p{
+    color: rgba(255, 251, 0, 0.9);
+}
+#holder_img,
+#holder_img>img{
+    width: 30dvw;
+    height: 50dvh;
+}
+
+#process_quote{
+    font-size: 3rem;
+}
+@keyframes slurry{
+    0%{bottom: 2dvh;}
+    10%{bottom: -2dvh;}
+    20%{bottom: -6dvh;}
+    30%{bottom: -10dvh;}
+    40%{bottom: -14dvh;}
+    50%{bottom: -18dvh;}
+    70%{bottom: -22dvh;}
+    85%{bottom: -26dvh;}
+    100%{bottom: -30dvh;}
+}
+
+@keyframes slurry_left{
+    0%{left: -30dvw;}
+    20%{left: -20dvw;}
+    100%{right: 9dvw;}
+}
+#slurry_img{
+    position: relative;
+    width: 15dvw;
+    height: 20dvh;
+}
+#holder_img{
+    z-index: 1;
+    margin-top: 20dvh;
+}
+
+#slurry_img > img{
+    width: 15dvw;
+    height: 20dvh;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    position: absolute;
+    left: 7dvw;
+    z-index: 2;
+}
+                                            /* Toppings */
+.toppings > p,
+.toppings > .items > ol > li >p{
+    color: rgba(157, 255, 242, 0.9);
+}
+
+.toppings > .items > ol > li > .img,
+.toppings > .items > ol > li > .img >img{
+    width: 30dvw;
+    height: 50dvh;
+}
+
+.toppings > .items > ol > li >p{
+    font-size: 2rem;
+}
+
+#end_Wait{
+    font-size: 4rem;
+}
+
+@media only screen and (max-width : 320px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+                                     /* Permission Window */
+    #permission{
+        width: 80dvw;
+    }
+
+    .cont > p{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .btn > button{
+        width: 15dvw;
+        padding: 10px;
+        height: 10dvh;
+        text-align: center;
+        box-shadow: 2px 2px 2px red;
+    }
+                                    /* Processes */
+    .process{
+        font-size: 1.2rem;
+    }
+
+    #fruit_quote{
+        font-size: 2rem;
+    }
+
+    .items,.items>ol>li>p{
+        margin-top: 0;
+    }
+                                    /* Middle Ice Cube */
+    #middle_one{
+        top: -30px;
+        left: 30px;
+    }
+    #ice_cube > i{
+        font-size: 1rem;
+    }
+                                    /* Holders */
+    .holder{
+        height: 90dvh;
+    }
+
+    #process_quote{
+        font-size: 1rem;
+    }
+
+    .holder>.items>ol{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+
+    .holder > .items >ol >li > .img,
+    .holder > .items >ol >li > .img >img{
+        height: 15dvh;
+    }
+
+    .holder > .items > ol >li:hover{
+        box-shadow: 1px 1px 2px rgba(255, 251, 0, 0.9);
+    }
+                                    /* Toppings */
+    .toppings > .items > ol > li > .img,
+    .toppings > .items > ol > li > .img >img{
+        width: 30dvw;
+        height: 30dvh;
+    }
+    .toppings > .items > ol > li >p{
+        font-size: 1rem;
+    }
+
+    .choice_holder{
+        margin-top: 3rem;
+    }
+
+    #end_Wait{
+        font-size: 2rem;
+    }
+    }
