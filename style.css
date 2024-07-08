@@ -331,4 +331,10 @@ i.fa-dice-d6{
     #end_Wait{
         font-size: 2rem;
     }
+
+    #end_result,
+    #end_img{
+        width: 80dvw;
+        height:80dvh;
+    }
     }
