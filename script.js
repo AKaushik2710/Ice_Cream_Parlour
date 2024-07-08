@@ -272,6 +272,7 @@ function chng(){
                                 const holder_name = holder.querySelector('p').innerText;
 
                                 const end_result = document.createElement("div");
+                              end_result.setAttribute('id','end_result');
                                 end_result.style.display = "flex";
 
                                 const end_result_img = document.createElement("img");
@@ -331,14 +332,7 @@ function chng(){
                                 else{
                                     console.log("Something is wrong");
                                 }
-
-                                if(screen.width <=320){
-                                    end_result.style.width = "80dvw";
-                                    end_result.style.height = "70dvh";
-
-                                    end_result_img.style.height = "inherit";
-                                    end_result_img.style.width = "inherit";
-                                }
+                                
                             },3000);
                         })
                     }
