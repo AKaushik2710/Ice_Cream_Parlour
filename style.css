@@ -337,4 +337,8 @@ i.fa-dice-d6{
         width: 80dvw;
         height:80dvh;
     }
+
+    #end_img{
+        object-fit: contain;
+    }
     }
